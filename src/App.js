@@ -1,11 +1,11 @@
 import React from "react";
-import NavbarContainer from "./components/NavbarContainer/NavbarContainer";
+import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <NavbarContainer />
+      <Navbar />
     </div>
   );
 }

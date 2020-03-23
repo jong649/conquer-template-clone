@@ -1,0 +1,14 @@
+.navbar-list-item {
+  display: inline-block;
+  padding: 10px;
+}
+
+.navbar-list-item a {
+  border: 1px solid #646d7c;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}

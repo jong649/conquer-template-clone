@@ -2,6 +2,8 @@
   background-color: #383e4c;
   display: flex;
   justify-content: center;
+  position: fixed;
+  width: 100%;
 }
 
 .menu-container {

@@ -3,3 +3,48 @@
   display: flex;
   justify-content: center;
 }
+
+.menu-container {
+  background-color: darkgray;
+  border-radius: 10px;
+  height: 30px;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  visibility: hidden;
+}
+
+.menu {
+  background: url("./menu.svg") center no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 30px;
+  outline: none;
+  width: 30px;
+}
+
+@media (max-width: 650px) {
+  .menu-container {
+    visibility: visible;
+  }
+
+  .navbar-container {
+    height: 0px;
+    margin-top: 50px;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+  }
+
+  .navbar-container.small {
+    height: 255px;
+    transition: all 0.3s ease-in-out, visibility 0s;
+    visibility: visible;
+  }
+
+  .nav-ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}

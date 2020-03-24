@@ -1,6 +1,7 @@
 .navbar-list-item {
   display: inline-block;
   padding: 25px;
+  transition: all 0.3s ease, visibility 0ms;
 }
 
 .navbar-list-item a {
@@ -10,7 +11,7 @@
   padding: 15px 25px;
   text-decoration: none;
   text-transform: capitalize;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease, visibility 0ms;
 }
 
 .navbar-list-item a:hover {
@@ -28,5 +29,21 @@
 
   .navbar-list-item a {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 740px) {
+  .navbar-list-item {
+    padding: 25px 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar-list-item {
+    padding: 15px 0px;
+  }
+
+  .navbar-list-item a {
+    border: none;
   }
 }

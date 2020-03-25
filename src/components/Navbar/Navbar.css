@@ -34,14 +34,18 @@
   .navbar-container {
     height: 0px;
     margin-top: 50px;
+    opacity: 0;
     transition: all 0.3s ease-in-out;
-    visibility: hidden;
   }
 
   .navbar-container.small {
     height: 255px;
-    transition: all 0.3s ease-in-out, visibility 0s;
-    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar-container.small a {
+    opacity: 1;
   }
 
   .nav-ul {
